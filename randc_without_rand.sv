@@ -19,7 +19,7 @@ module test();
   packet pkt = new();
   
   initial begin
-    repeat(8) begin    
+    repeat(10) begin    
       pkt.randomize();
       $display("Data = %0d Used %p",pkt.data,pkt.used);
     end    
